@@ -1,0 +1,28 @@
+/* ------------------------------------------------------------------------------ */
+/* APP main component styles (scoped, for globals see global chain under ../scss/) */
+/* ------------------------------------------------------------------------------ */
+
+.main-wrapper {
+}
+
+// -------------------------------------------------------
+// simple vue transition for content area in routes
+/*
+.fade-page-enter-from,
+.fade-page-leave-to {
+  opacity: 0;
+}
+
+.fade-page-enter-active {
+  transition: opacity 0.3s ease-out;
+}
+
+.fade-page-leave-active {
+  transition: opacity 0.3s ease-in;
+}
+
+.fade-page-enter-to,
+.fade-page-leave-from {
+  opacity: 1;
+}
+*/
