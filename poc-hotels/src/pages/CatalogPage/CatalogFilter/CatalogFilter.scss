@@ -1,0 +1,90 @@
+/* ------------------------------------------------ */
+/* Component level scoped styles */
+/* ------------------------------------------------ */
+@import "../../../css/common/palette";
+.filter-component {
+    background-color: white;
+    margin-bottom: 14px;
+    border-radius: 24px 0 24px;
+    padding: 20px;
+    display: flex;
+
+    .column-1 {
+        flex: 1 1 auto;
+        min-width: 170px;
+        max-width: 170px;
+    }
+    .column-2 {
+        flex: 1 1 auto;
+        min-width: 220px;
+        max-width: 220px;
+    }
+    .column-3 {
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .customer-block {
+        display: flex;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        .form-switch {
+            margin-left: 8px;
+            top: -4px;
+            position: relative;
+        }
+        .custom-label {
+            font-size: 1.1rem;
+        }
+    }
+    .dates-block {
+    }
+    .ammenities-block {
+    }
+    .action-block {
+        display: inline-block;
+        .btn {
+            padding: 15px;
+            font-size: 1.5rem;
+            min-width: 272px;
+        }
+    }
+
+    .form-label {
+        color: darken($secondary-main, 5%);
+    }
+}
+
+// -------------------------------------------------------
+// scoped media queries
+@media screen and (max-width: 992px) {
+    .filter-component {
+        flex-flow: wrap;
+        .column-1 {
+            min-width: auto;
+            max-width: initial;
+            width: 100%;
+        }
+        .column-2 {
+            margin-top: 20px;
+            min-width: auto;
+            max-width: initial;
+            width: 100%;
+        }
+        .column-3 {
+            margin-top: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .action-block {
+            .btn {
+                padding: 8px 20px;
+                font-size: 1.3rem;
+                min-width: initial;
+            }
+        }
+    }
+}
