@@ -10,17 +10,25 @@
     display: flex;
 
     .column-1 {
-        flex: 1 1 auto;
-        min-width: 170px;
-        max-width: 170px;
+        flex: 1 0 350px;
+        max-width: 350px;
+
+        padding-top: 6px;
+        > div {
+            display: flex;
+            > div {
+                flex: 1 0 160px;
+                max-width: 160px;
+                padding-right: 10px;
+            }
+        }
     }
     .column-2 {
-        flex: 1 1 auto;
-        min-width: 220px;
-        max-width: 220px;
+        padding-top: 6px;
+        flex: 1 0 auto;
     }
     .column-3 {
-        flex: 1 1 auto;
+        flex: 1 0 auto;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -30,6 +38,7 @@
         display: flex;
         margin-bottom: 10px;
         padding-top: 5px;
+        width: 100px;
         .form-switch {
             margin-left: 8px;
             top: -4px;
@@ -40,6 +49,11 @@
         }
     }
     .dates-block {
+        display: flex;
+        > div {
+            flex: 1 0 220px;
+            padding-right: 10px;
+        }
     }
     .ammenities-block {
     }
@@ -59,24 +73,33 @@
 
 // -------------------------------------------------------
 // scoped media queries
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
     .filter-component {
-        flex-flow: wrap;
+        flex-direction: column;
         .column-1 {
-            min-width: auto;
-            max-width: initial;
-            width: 100%;
+            > div {
+                display: block;
+            }
+            max-width: none;
+            flex: auto;
         }
         .column-2 {
             margin-top: 20px;
-            min-width: auto;
-            max-width: initial;
-            width: 100%;
+            flex: 1;
+            max-width: none;
         }
         .column-3 {
+            flex: 1;
+
+            max-width: none;
             margin-top: 20px;
             align-items: center;
             justify-content: center;
+        }
+        .dates-block {
+            > div {
+                flex: 1 0 50%;
+            }
         }
 
         .action-block {
@@ -84,6 +107,17 @@
                 padding: 8px 20px;
                 font-size: 1.3rem;
                 min-width: initial;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .filter-component {
+        .dates-block {
+            display: block;
+            > div {
+                flex: 1 0 100%;
             }
         }
     }
