@@ -1,24 +1,19 @@
-# main
+# POC HOTELS
 
-## Project setup
-```
-npm install
-```
+This project is a small proof of concept / challenge.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Project Features
+- Vue 3 based SPA
+- Basic App architecture definition
+- 2 different layouts: for public pages and internal pages
+- Components
+- Product grid page with JSON dynamic data stored in Vuex
+- SCSS / Base Styling
+- Lazy loading of pages based on routes
+- Vue router
+- Basic Vuex usage
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## DEMO
+[test-vue-hotels.web.app](https://test-vue-hotels.web.app/welcome)
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

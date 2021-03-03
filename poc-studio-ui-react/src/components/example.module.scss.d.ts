@@ -1,5 +1,5 @@
 declare const styles: {
-  readonly "mui-chips-component": string;
+  readonly "test-class": string;
 };
 export = styles;
 
